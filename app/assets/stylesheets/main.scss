@@ -1,0 +1,183 @@
+// Place all the styles related to the main controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+html, body {
+    height: 100%;
+    margin: 0px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+img{
+    padding-left:5px;
+    padding-right: 5px;
+}
+
+/* modify Bootstrap's container*/
+.container-fluid{
+    padding-top: 60px;
+    padding-left: 0px;
+    padding-right: 0px;
+    height: 100%;
+}
+
+/* modify Bootstrap's navbar*/
+.navbar{
+    height: 60px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    display: table;
+}
+
+/* modify Bootstrap button */
+.btn {
+    padding: 2px 4px;
+}
+
+#map-canvas{
+    height: 100%;
+}
+
+/* properties of inputs and other elements in the navbar */
+.input-wrapper{
+    width: 100%;
+}
+
+.centered{
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.controls {
+    border: 1px solid transparent;
+    border-radius: 2px 2px 2px 2px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    height: 28px;
+    outline: none;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+#pac-input, #pac-input2 {
+    background-color: #fff;
+    padding: 0 11px 0 13px;
+    width: 350px;
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: 300;
+    text-overflow: ellipsis;
+}
+
+#middles{
+    padding-left: 20%;
+    padding-top:1%;
+}
+
+#logo{
+    color:#fff;
+    font-size: 20px;
+    padding-left: 3%;
+    float:left;
+}
+
+#pac-input:focus, #pac-input2:focus {
+    border-color: #4d90fe;
+    margin-left: -1px;
+    padding-left: 14px;
+    width: 351px;
+}
+
+.pac-container {
+    font-family: Roboto;
+    z-index: 2000;
+}
+
+#about, #whyslow, #togglemap{
+    float: right;
+    padding-right: 20px;
+    color: #fff;
+}
+
+.links {
+    float:right;
+    padding-top: 3px;
+    font-size: 12px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+/* crime table properties */
+table.fixed tbody tr > td{
+    font-size: 12px;
+}
+
+.fixed {
+    position: absolute;
+    top: 100px;
+    right: 10px;
+    border: 0px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px #666;
+    z-index: 100;
+    background-color: #B0B0B0 ;
+    width: 250px;
+    opacity: 0.9;
+}
+
+.checkbox-inline{
+    float:right;
+}
+
+/* slider properties */
+#slider{
+    margin: 20px 80px;
+    z-index: 200;
+    width: 35%;
+    position: absolute;
+    bottom: 50px;
+}
+
+/* infoBox window */
+div.tooltips {
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+div.tooltips span {
+  position: absolute;
+  width:230px;
+  color: #FFFFFF;
+  background: #000000;
+  height: 105px;
+  line-height: 30px;
+  text-align: center;
+  opacity: 0.95;
+  border-radius: 6px;
+  z-index:-100;
+}
+
+div.tooltips span p{
+    font-size: 13px;
+    font-weight: bold;
+}
+
+div.tooltips span:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -8px;
+  width: 0; height: 0;
+  border-top: 8px solid #000000;
+  border-right: 8px solid transparent;
+  border-left: 8px solid transparent;
+}
+
+table.tiptable{
+  line-height: 14px;
+  width:100%;
+  margin: 0 0 0 0 ;
+  border-collapse:collapse;
+}
+
+table.tiptable tbody tr > td{
+    font-size: 13px;
+}

@@ -1,0 +1,44 @@
+<div class = "navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="input-wrapper centered">
+        <div id="logo">
+            <div>SF Safe</div>
+            <div>Walks</div>
+        </div>
+        <div id="middles">
+            <input id="pac-input" class="controls" type="text" placeholder="From...">
+            <input id="pac-input2" class="controls" type="text" placeholder="To...">
+            <button id="refresh" class=" btn btn-sm btn-primary">Refresh</button>
+            <a id="about" href= "#" class="btn btn-link"> About </a>
+            <a id="whyslow" href= "#" class="btn btn-link"> Why is it slow? </a>
+            <a id="togglemap" href= "#" class="btn btn-link">Show density map</a>
+        </div>
+    </div>
+</div>
+
+<!-- main -->
+<div class="container-fluid">
+    <div id="map-canvas"></div>
+    <div id="slider"> </div>
+    <table class="table table-striped fixed table-condensed">
+        <thead>
+            <tr>
+                <th> Crime type
+                    <div class="links">
+                        <a id="showall"> Show all </a> |
+                        <a id="hideall"> Hide all </a>
+                    </div>
+                </th>
+            </tr>
+        </thead>
+    </table>
+</div>
+<div id="aboutdialog" title="About">
+    <p>An application showing types of crimes and density of crimes along a chosen walking route.</p>
+    <p>Limited to San Francisco only.</p>
+    <p><a href="mailto:imousterian@gmail.com" style="text-decoration:underline;">Questions?</a></p>
+</div>
+<div id="whyslowdialog" title="Why is it slow?">
+    <p>We rely on public API from https://data.sfgov.org/.</p>
+    <p>It may take a while to get the response back or it may not get a response back if API limit has been exceeded.</p>
+</div>
+

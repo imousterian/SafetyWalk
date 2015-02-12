@@ -12,5 +12,10 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery-ui.min
 //= require turbolinks
+//= require infobox
+//= require turf.min
+//= require jQDateRangeSlider-withRuler-min
 //= require_tree .
+
