@@ -2,3 +2,4 @@ An application showing types of crimes and density of crimes along a walking rou
 
 Technologies: Rails, Javascript, jQuery, Google API, Turf.js, jQuerySlider.
 
+Available at[Heroku](https://safetywalk.herokuapp.com/)
