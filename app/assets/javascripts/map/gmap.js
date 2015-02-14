@@ -76,14 +76,14 @@ $(document).ready(function(){
         and on checkbox change event
     */
     $('#hideall').click(function(){
-        $('input[type=checkbox').each(function(){
+        $('input[type=checkbox]').each(function(){
             this.checked = false;
         });
         constructCrimeQuery();
     });
 
     $('#showall').click(function(){
-        $('input[type=checkbox').each(function(){
+        $('input[type=checkbox]').each(function(){
             this.checked = true;
         });
         constructCrimeQuery();
